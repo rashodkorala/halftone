@@ -73,7 +73,7 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    void loadSource('/sample.svg', 'sample')
+    void loadSource(`${import.meta.env.BASE_URL}sample.svg`, 'sample')
   }, [loadSource])
 
   const processInput = useMemo(() => {
